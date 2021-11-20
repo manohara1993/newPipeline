@@ -6,7 +6,7 @@ pipeline {
     }
     
     environment {
-                SERVICE_BRANCH = "master"
+                SERVICE_BRANCH = "main"
             }
             
     stages {
