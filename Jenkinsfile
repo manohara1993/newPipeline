@@ -13,7 +13,7 @@ pipeline {
         stage('checkout') {
             steps {
                 echo "the branch is ${params.branch}"
-                git branch: 'main', url: 'https://github.com/microdegree-kannada/pipeline.git'
+                git branch: 'main', url: 'https://github.com/manohara1993/newPipeline.git'
                 }
             }
         stage('compile and build'){
@@ -31,7 +31,7 @@ pipeline {
     }
     post { 
         always { 
-            junit '**/target/surefire-reports/TEST-com.microdegree.AppTest.xml'
+             echo 'Success'
         }
     }
 }
